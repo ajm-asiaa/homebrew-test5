@@ -8,14 +8,14 @@ class CartaBackend < Formula
 
   depends_on "cmake" => :build
   depends_on "ajm-asiaa/test4/carta-casacore"
+  depends_on "ajm-asiaa/test4/zfp"
   depends_on "grpc"
   depends_on "libomp"
   depends_on "libuv"
   depends_on "protobuf"
   depends_on "pugixml"
   depends_on "tbb"
-  depends_on "ajm-asiaa/test4/zfp"
-  depends_on "zstd" 
+  depends_on "zstd"
 
   def install
     ENV["OPENSSL_ROOT_DIR"] = "$(brew --prefix openssl)"
